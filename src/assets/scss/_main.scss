@@ -1,0 +1,86 @@
+@import "./fonts-custom";
+@import "./animation";
+@import "~bootstrap/scss/bootstrap";
+
+
+
+// Font default / fallback
+$font-default-sans-serif:     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-default-serif:          Georgia, serif, "Palatino Linotype", "Book Antiqua", Palatino, serif, "Times New Roman", Times, serif !default;
+$font-default-monospace:      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+@include font-face("CHAPARRALPRO-BOLD", "CHAPARRALPRO-BOLD", 400);
+@include font-face("CHAPARRALPRO-BOLDIT", "CHAPARRALPRO-BOLDIT", 400);
+@include font-face("CHAPARRALPRO-ITALIC", "CHAPARRALPRO-ITALIC", 400);
+@include font-face("CHAPARRALPRO-LIGHTIT", "CHAPARRALPRO-LIGHTIT", 400);
+@include font-face("CHAPARRALPRO-REGULAR", "CHAPARRALPRO-REGULAR", 400);
+@include font-face("CHOPINSCRIPT", "CHOPINSCRIPT", 400);
+
+$font-cover: "CHOPINSCRIPT", $font-default-sans-serif;
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+.cover-bg {
+    background: #000;
+    &:after {
+      content: "";
+      background: #000 url(../images/bg-cover.jpg) no-repeat 60% center;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+  }
+
+.cover-section {
+    height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: -15rem;
+        h1 {
+            font-family: $font-cover;
+            color: #ffffff;
+            font-size: 4rem;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            &.lely {
+                margin-right: 4rem;
+            }
+            &.aldy {
+                margin-left: 5rem;
+            }
+            // animation: fadeInUp 1s ease-in-out;
+            @include media-breakpoint-down(sm) {
+                font-size: 3rem;
+            }
+        }
+        h4 {
+            margin: 0;
+            font-family: $font-cover;
+            font-size: 2rem;
+            color: #ffffff;
+            font-weight: 100;
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+        .flower {
+            max-width: 200px;
+        }
+    }
+}

@@ -1,7 +1,24 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "lely-aldy-wedding",
+    siteUrl: "https://lelyaldywedding.com",
+    title: "Lely & Aldy Wedding",
+    description: `The Wedding Ceremony of Lely & Aldy`,
+    author: `Lely&Aldy`,
+    metaImage: `src/assets/richlink.jpg`,
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Lely & Aldy Wedding',
+        short_name: 'LelyAldyWedding',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'standalone',
+        icon: 'src/assets/images/favicon.png',
+      },
+    }
+  ],
 };

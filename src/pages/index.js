@@ -15,15 +15,17 @@ const IndexPage = () => {
     wrapper.classList.add("animated", "fadeIn")
   }, [])
   return (
-    <main>
+    <>
       <Loader />
-      <SEO />
-      {!context?.initialLoading ? (
-        <>
-          <Cover />
-        </>
-      ) : <div className="h-vh-100 w-vw-100" />}
-    </main>
+      <main>
+        <SEO />
+        {!context?.initialLoading ? (
+          <>
+            <Cover />
+          </>
+        ) : <div />}
+      </main>
+    </>
   )
 }
 

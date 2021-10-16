@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useLayoutEffect } from "react"
 import Cover from "../components/cover"
 import { Loader } from "../components/loader"
 import SEO from "../components/seo"
+import Verse from "../components/verse"
 import { LoadingContext } from "../context/loading-context"
 
 const IndexPage = () => {
@@ -22,6 +23,7 @@ const IndexPage = () => {
         {!context?.initialLoading ? (
           <>
             <Cover />
+            <Verse />
           </>
         ) : <div />}
       </main>

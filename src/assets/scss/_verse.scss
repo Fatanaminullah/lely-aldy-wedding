@@ -1,0 +1,51 @@
+.verse-section {
+    height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;  
+    background: #000 url(../images/bg-landscape.jpg) no-repeat center center;  
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+        background: #000 url(../images/bg-verse.png) no-repeat center center;
+        background-size: cover;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .verse-image {
+            width: 45%;
+            margin-bottom: 2rem;
+        }
+        .verse-translate {
+            font-family: $font-verses;
+            margin-bottom: 2rem;
+            font-size: 1.25rem;
+            width: 50%;
+            text-align: center;
+            color: #916B6F;
+        }
+        .verse-label {
+            font-family: $font-verses;
+            font-size: 1.5rem;
+            color: #916B6F;
+        }
+        @include media-breakpoint-down(sm) {
+            .verse-image {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            .verse-translate {
+                margin-bottom: 2rem;
+                font-size: 1rem;
+                width: 90%;
+                text-align: center;
+            }
+            .verse-label {
+                font-size: 1rem;
+            }
+        }
+    }
+}

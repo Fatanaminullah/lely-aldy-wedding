@@ -1,10 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
 @import "./fonts";
 @import "./animation";
 @import "./position";
-@import "~bootstrap/scss/bootstrap";
+@import "./loader";
 
 @import "./cover";
-@import "./loader";
+@import "./verse";
 
 body {
     margin: 0;

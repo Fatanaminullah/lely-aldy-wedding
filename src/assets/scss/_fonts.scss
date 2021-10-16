@@ -1,24 +1,25 @@
 $dir-fonts: "../fonts"; // Antikode
 
 @mixin font-face($font-name, $file-name, $font-weight: normal, $style: normal) {
-    @font-face {
-      font-family: quote($font-name);
-      src: url("#{$dir-fonts}/#{$file-name}"+".eot");
-      src: url("#{$dir-fonts}/#{$file-name}"+".eot?#iefix")
-          format("embedded-opentype"),
-        url("#{$dir-fonts}/#{$file-name}"+".woff") format("woff"),
-        url("#{$dir-fonts}/#{$file-name}"+".ttf") format("truetype"),
-        url("#{$dir-fonts}/#{$file-name}"+".svg##{$font-name}") format("svg");
-      font-weight: $font-weight;
-      font-style: $style;
-      font-display: swap;
-    }
+  @font-face {
+    font-family: quote($font-name);
+    src: url("#{$dir-fonts}/#{$file-name}" + ".eot");
+    src: url("#{$dir-fonts}/#{$file-name}" + ".eot?#iefix") format("embedded-opentype"),
+      url("#{$dir-fonts}/#{$file-name}" + ".woff") format("woff"),
+      url("#{$dir-fonts}/#{$file-name}" + ".ttf") format("truetype"),
+      url("#{$dir-fonts}/#{$file-name}" + ".svg##{$font-name}") format("svg");
+    font-weight: $font-weight;
+    font-style: $style;
+    font-display: swap;
   }
+}
 
-  // Font default / fallback
-$font-default-sans-serif:     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-default-serif:          Georgia, serif, "Palatino Linotype", "Book Antiqua", Palatino, serif, "Times New Roman", Times, serif !default;
-$font-default-monospace:      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+// Font default / fallback
+$font-default-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-default-serif: Georgia, serif, "Palatino Linotype", "Book Antiqua", Palatino, serif, "Times New Roman", Times,
+  serif !default;
+$font-default-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 @include font-face("CHAPARRALPRO-BOLD", "CHAPARRALPRO-BOLD", 400);
 @include font-face("CHAPARRALPRO-BOLDIT", "CHAPARRALPRO-BOLDIT", 400);
@@ -28,3 +29,4 @@ $font-default-monospace:      SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 @include font-face("CHOPINSCRIPT", "CHOPINSCRIPT", 400);
 
 $font-cover: "CHOPINSCRIPT", $font-default-sans-serif;
+$font-verses: "CHAPARRALPRO-ITALIC", $font-default-sans-serif;

@@ -28,5 +28,7 @@ $font-default-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mo
 @include font-face("CHAPARRALPRO-REGULAR", "CHAPARRALPRO-REGULAR", 400);
 @include font-face("CHOPINSCRIPT", "CHOPINSCRIPT", 400);
 
-$font-cover: "CHOPINSCRIPT", $font-default-sans-serif;
-$font-verses: "CHAPARRALPRO-ITALIC", $font-default-sans-serif;
+$font-chopinscript: "CHOPINSCRIPT", $font-default-sans-serif;
+$font-chaparral-italic: "CHAPARRALPRO-ITALIC", $font-default-sans-serif;
+$font-chaparral-regular: "CHAPARRALPRO-REGULAR", $font-default-sans-serif;
+$font-chaparral-bold: "CHAPARRALPRO-BOLD", $font-default-sans-serif;

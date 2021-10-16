@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useLayoutEffect } from "react"
+import Bride from "../components/bride"
 import Cover from "../components/cover"
 import { Loader } from "../components/loader"
+import Protocols from "../components/protocols"
 import SEO from "../components/seo"
 import Verse from "../components/verse"
 import { LoadingContext } from "../context/loading-context"
@@ -24,6 +26,8 @@ const IndexPage = () => {
           <>
             <Cover />
             <Verse />
+            <Bride />
+            <Protocols />
           </>
         ) : <div />}
       </main>

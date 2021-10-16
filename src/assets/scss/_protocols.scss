@@ -1,0 +1,45 @@
+.protocols-section {
+    height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;  
+    background: #000 url(../images/bg-landscape.jpg) no-repeat center center;  
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+        background: #000 url(../images/bg-protocols.png) no-repeat center center;
+        background-size: cover;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title {
+            font-size: 4rem;
+            font-family: $font-chopinscript;
+            color: $default-color;
+            margin-bottom: 3rem;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+        }
+        .item {
+            font-size: 1.5rem;
+            font-family: $font-chaparral-regular;
+            color: $default-color;
+            text-align: center;
+            @include media-breakpoint-down(sm) {
+                text-align: justify;
+                width: 80%;
+            }
+        }
+        .flower {
+            width: 30%;
+            @include media-breakpoint-down(sm) {
+                width: 60%;
+            }
+        }
+    }
+}

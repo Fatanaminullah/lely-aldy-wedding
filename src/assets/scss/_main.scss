@@ -4,8 +4,12 @@
 @import "./position";
 @import "./loader";
 
+$default-color: #916B6F;
+
 @import "./cover";
 @import "./verse";
+@import "./bride";
+@import "./protocols";
 
 body {
     margin: 0;

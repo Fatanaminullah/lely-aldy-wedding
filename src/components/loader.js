@@ -16,7 +16,7 @@ export const Loader = ({ className }) => {
         setTimeout(() => {
           setLoader(false)
         }, 1000)
-      }, 2500)
+      }, 3000)
     }
   }, [context?.setInitialLoading])
 

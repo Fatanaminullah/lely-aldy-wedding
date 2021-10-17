@@ -1,0 +1,50 @@
+.gallery-section {
+    height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;  
+    width: 100%;
+    background: #fff url(../images/bg-landscape.jpg) no-repeat center center;  
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+        background: #fff url(../images/bg-gallery.png) no-repeat center center;
+        background-size: cover;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 3rem 0;
+        .title {
+            font-size: 4rem;
+            font-family: $font-chopinscript;
+            color: $default-color;
+            margin-bottom: 3rem;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+        }
+        .gallery-container {
+            width: 80%;
+            height: 600px;
+            border-radius: 10px;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                height: auto;
+            }
+            ._2qwzr {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            ._2c50p {
+                margin-top: 0;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+}

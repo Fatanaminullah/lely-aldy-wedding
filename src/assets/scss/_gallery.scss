@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     @include media-breakpoint-down(sm) {
-        height: auto;
+        height: auto !important;
         background: #fff url(../images/bg-gallery.png) no-repeat center center;
         background-size: cover;
     }

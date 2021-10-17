@@ -1,0 +1,137 @@
+.events-section {
+    height: auto !important;
+    width: 100%;
+    background: #fff url(../images/bg-landscape.jpg) no-repeat center center;  
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include media-breakpoint-down(sm) {
+        height: auto !important;
+        background: #fff url(../images/bg-events.png) no-repeat center center;
+        background-size: cover;
+    }
+    .content-events {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 3rem;
+        .title {
+            font-size: 4rem;
+            font-family: $font-chopinscript;
+            color: $default-color;
+            margin-bottom: 3rem;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+        }
+        .date {
+            font-size: 2.5rem;
+            font-family: $font-chaparral-italic;
+            color: $default-color;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+        .events-label-container, .events-value-container {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            justify-content: space-between;
+            > span {
+                font-size: 1.25rem;
+                font-family: $font-chaparral-light-italic;
+                font-weight: 100;
+                color: $default-color;
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .events-label-container {
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 2rem;
+            border-right: 1px solid $default-color;
+        }
+        .events-value-container {
+            padding-left: 2rem;
+        }
+        .flower {
+            width: 30%;
+            @include media-breakpoint-down(sm) {
+                width: 60%;
+            }
+        }
+    }
+    .content-location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 3rem;
+        .title {
+            font-size: 4rem;
+            font-family: $font-chopinscript;
+            color: $default-color;
+            margin-bottom: 3rem;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+        }
+        .location-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            @include media-breakpoint-up(md) {
+                align-items: flex-start;
+            }
+            .location {
+                font-size: 1.25rem;
+                font-family: $font-chaparral-bold;
+                color: $default-color;
+                text-align: center;
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.25rem;
+                }
+            }
+            .address {
+                font-size: 1.25rem;
+                font-family: $font-chaparral-regular;
+                font-weight: 100;
+                color: $default-color;
+                text-align: center;
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .maps-container {
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 40%;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .maps-iframe {
+                width: 100%;
+                min-height: 250px;
+                position: relative;
+                @include media-breakpoint-up(md) {
+                    min-height: 350px;
+                }
+            }
+        }
+    }
+}

@@ -17,7 +17,7 @@ const Countdown = () => {
                         <div className={`col-6 col-md-3 ${anim(2)}`}>
                             <div className="countdown-box">
                                 <div className="countdown-item">
-                                    <h4 className="value">{countdown?.days}</h4>
+                                    <h4 className="value">{countdown?.days || '00'}</h4>
                                     <span className="label">Hari</span>
                                 </div>
                             </div>
@@ -25,7 +25,7 @@ const Countdown = () => {
                         <div className={`col-6 col-md-3 ${anim(3)}`}>
                             <div className="countdown-box">
                                 <div className="countdown-item">
-                                    <h4 className="value">{countdown?.hours}</h4>
+                                    <h4 className="value">{countdown?.hours || '00'}</h4>
                                     <span className="label">Jam</span>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@ const Countdown = () => {
                         <div className={`col-6 col-md-3 ${anim(4)}`}>
                             <div className="countdown-box">
                                 <div className="countdown-item">
-                                    <h4 className="value">{countdown?.minutes}</h4>
+                                    <h4 className="value">{countdown?.minutes || '00'}</h4>
                                     <span className="label">Menit</span>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ const Countdown = () => {
                         <div className={`col-6 col-md-3 ${anim(5)}`}>
                             <div className="countdown-box">
                                 <div className="countdown-item">
-                                    <h4 className="value">{countdown?.seconds}</h4>
+                                    <h4 className="value">{countdown?.seconds || '00'}</h4>
                                     <span className="label">Detik</span>
                                 </div>
                             </div>

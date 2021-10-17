@@ -13,7 +13,7 @@ const EventAndLocation = () => {
                 <div className="content-events">
                     <h1 className={`title ${anim(1)}`}>Rangkaian Acara</h1>
                     <h4 className={`date ${anim(2)}`}>7 November 2021</h4>
-                    <img src={Ring} alt="" className="ring" />
+                    <img src={Ring} alt="" className={`ring ${anim(2)}`} />
                     <div className="row w-100">
                         <div className="col-6 events-label-container">
                             <span className={anim(3)}>Akad Nikah</span>

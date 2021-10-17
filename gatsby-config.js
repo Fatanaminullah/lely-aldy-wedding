@@ -15,7 +15,7 @@ module.exports = {
         short_name: 'LelyAldyWedding',
         start_url: '/',
         background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        theme_color: '#e49191',
         display: 'standalone',
         icon: 'src/assets/images/favicon.png',
       },

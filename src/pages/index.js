@@ -1,17 +1,18 @@
 import React, { useContext, useEffect, useLayoutEffect } from "react"
 import 'react-gallery-carousel/dist/index.css'
-import AudioPlayer from "../components/audio-player"
-import Bride from "../components/bride"
-import Countdown from "../components/countdown"
-import Cover from "../components/cover"
-import EventAndLocation from "../components/event-and-location"
-import Gallery from "../components/gallery"
-import { Loader } from "../components/loader"
-import Protocols from "../components/protocols"
-import SEO from "../components/seo"
-import Verse from "../components/verse"
+import AudioPlayer from "../components/general/audio-player"
+import Bride from "../components/pages/bride"
+import Countdown from "../components/pages/countdown"
+import Cover from "../components/pages/cover"
+import EventAndLocation from "../components/pages/event-and-location"
+import Gallery from "../components/pages/gallery"
+import { Loader } from "../components/general/loader"
+import Protocols from "../components/pages/protocols"
+import SEO from "../components/general/seo"
+import Verse from "../components/pages/verse"
 import { AudioContext } from "../context/audio-context"
 import { LoadingContext } from "../context/loading-context"
+import Navbar from "../components/general/navbar"
 
 
 const IndexPage = () => {
@@ -37,6 +38,7 @@ const IndexPage = () => {
         {!context?.initialLoading ? (
           <>
             <AudioPlayer />
+            <Navbar />
             <Cover />
             <Verse />
             <Bride />

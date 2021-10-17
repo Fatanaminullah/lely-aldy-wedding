@@ -1,5 +1,5 @@
 import React from 'react'
-import Flower from '../assets/images/flower-3.png'
+import Flower from '../../assets/images/flower-3.png'
 
 const Cover = () => {
     return (

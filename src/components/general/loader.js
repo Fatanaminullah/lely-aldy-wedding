@@ -1,5 +1,5 @@
-import loadingJSON from "../assets/lottie/loading.json"
-import { LoadingContext } from "../context/loading-context"
+import loadingJSON from "../../assets/lottie/loading.json"
+import { LoadingContext } from "../../context/loading-context"
 import React, { useContext, useEffect, useState } from "react"
 import Lottie from "react-lottie"
 

@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
-import PauseButton from '../assets/images/icon-pause.png';
-import PlayButton from '../assets/images/icon-play.png';
-import ArRum21 from "../assets/music/ar_rum_21.mp3";
-import { AudioContext } from '../context/audio-context';
+import PauseButton from '../../assets/images/icon-pause.png';
+import PlayButton from '../../assets/images/icon-play.png';
+import ArRum21 from "../../assets/music/ar_rum_21.mp3";
+import { AudioContext } from '../../context/audio-context';
 
 const AudioPlayer = () => {
     const context = useContext(AudioContext)

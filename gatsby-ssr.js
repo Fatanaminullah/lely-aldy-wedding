@@ -1,9 +1,14 @@
 import React from "react"
-
+import "./src/assets/scss/_main.scss"
+import { AudioProvider } from "./src/context/audio-context"
 import { LoadingProvider } from "./src/context/loading-context"
 
-import "./src/assets/scss/_main.scss"
+
 
 export const wrapRootElement = ({ element }) => (
-    <LoadingProvider>{element}</LoadingProvider>
+    <LoadingProvider>
+        <AudioProvider>
+            {element}
+        </AudioProvider>
+    </LoadingProvider>
 )

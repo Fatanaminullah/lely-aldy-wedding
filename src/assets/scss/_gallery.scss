@@ -1,6 +1,5 @@
 .gallery-section {
-    height: 100vh !important;
-    height: calc(var(--vh, 1vh) * 100) !important;  
+    height: auto !important;
     width: 100%;
     background: #fff url(../images/bg-landscape.jpg) no-repeat center center;  
     background-size: cover;
@@ -8,7 +7,6 @@
     align-items: center;
     justify-content: center;
     @include media-breakpoint-down(sm) {
-        height: auto !important;
         background: #fff url(../images/bg-gallery.png) no-repeat center center;
         background-size: cover;
     }
@@ -31,27 +29,13 @@
         }
         .gallery-container {
             width: 80%;
-            height: 600px;
-            border-radius: 10px;
-            ._2qwzr {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-            }
+            height: 650px;
             ._2c50p {
                 margin-top: 0;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
             }
             @include media-breakpoint-down(sm) {
                 width: 100%;
                 height: auto;
-                border-radius: 0;
-                ._2qwzr {
-                    border-radius: 0;
-                }
-                ._2c50p {
-                    border-radius: 0;
-                }
             }
         }
     }

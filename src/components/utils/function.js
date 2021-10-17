@@ -70,8 +70,6 @@ export const useCountdown = ({ startDate, endDate }) => {
             const minutes = prependZero(duration.minutes(), 10)
             const seconds = prependZero(duration.seconds(), 10)
 
-            console.log('diff', eventStart, now)
-
             if (eventEnded.valueOf() < now.valueOf()) {
                 setEnded(true)
             } else if (eventStart.valueOf() < now.valueOf()) {

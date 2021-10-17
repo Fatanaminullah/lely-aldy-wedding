@@ -33,11 +33,18 @@
             font-size: 2.5rem;
             font-family: $font-chaparral-italic;
             color: $default-color;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             font-weight: 700;
             @include media-breakpoint-down(sm) {
                 margin-bottom: 2rem;
                 font-size: 1.5rem;
+            }
+        }
+        .ring {
+            width: 7.5%;
+            margin-bottom: 1rem;
+            @include media-breakpoint-down(sm) {
+                width: 15%;
             }
         }
         .events-label-container, .events-value-container {

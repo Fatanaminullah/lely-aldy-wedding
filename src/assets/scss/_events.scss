@@ -1,4 +1,4 @@
-.gallery-section {
+.events-section {
     height: 100vh !important;
     height: calc(var(--vh, 1vh) * 100) !important;  
     width: 100%;
@@ -8,8 +8,7 @@
     align-items: center;
     justify-content: center;
     @include media-breakpoint-down(sm) {
-        height: auto;
-        background: #fff url(../images/bg-gallery.png) no-repeat center center;
+        background: #fff url(../images/bg-events.png) no-repeat center center;
         background-size: cover;
     }
     .content {
@@ -29,29 +28,21 @@
                 font-size: 2.5rem;
             }
         }
-        .gallery-container {
-            width: 80%;
-            height: 600px;
-            border-radius: 10px;
-            ._2qwzr {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-            }
-            ._2c50p {
-                margin-top: 0;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-            }
+        .item {
+            font-size: 1.5rem;
+            font-family: $font-chaparral-regular;
+            color: $default-color;
+            text-align: center;
             @include media-breakpoint-down(sm) {
-                width: 100%;
-                height: auto;
-                border-radius: 0;
-                ._2qwzr {
-                    border-radius: 0;
-                }
-                ._2c50p {
-                    border-radius: 0;
-                }
+                text-align: justify;
+                width: 80%;
+                font-size: 1rem;
+            }
+        }
+        .flower {
+            width: 30%;
+            @include media-breakpoint-down(sm) {
+                width: 60%;
             }
         }
     }

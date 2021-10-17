@@ -60,8 +60,8 @@ export const useCountdown = ({ startDate, endDate }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const eventStart = moment(startDate)
-            const eventEnded = moment(endDate)
+            const eventStart = moment(startDate,  "YYYY-MM-DD:HH:mm:ssZ")
+            const eventEnded = moment(endDate, "YYYY-MM-DD:HH:mm:ssZ")
             const now = moment()
 
             const duration = moment.duration(eventStart.diff(now))
@@ -69,6 +69,8 @@ export const useCountdown = ({ startDate, endDate }) => {
             const hours = prependZero(duration.hours(), 10)
             const minutes = prependZero(duration.minutes(), 10)
             const seconds = prependZero(duration.seconds(), 10)
+
+            console.log('diff', eventStart, now)
 
             if (eventEnded.valueOf() < now.valueOf()) {
                 setEnded(true)

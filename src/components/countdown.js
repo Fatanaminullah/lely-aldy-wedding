@@ -8,6 +8,7 @@ const Countdown = () => {
         startDate: "2021-11-07:07:30:00+07:00",
         endDate: "2021-11-07T14:00:00+07:00",
     });
+    console.log('countdown', countdown)
     return (
         <section className="countdown-section" ref={trigger}>
             <div className="py-5">

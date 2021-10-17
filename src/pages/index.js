@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useLayoutEffect } from "react"
 import Bride from "../components/bride"
+import Countdown from "../components/countdown"
 import Cover from "../components/cover"
 import { Loader } from "../components/loader"
 import Protocols from "../components/protocols"
@@ -27,6 +28,7 @@ const IndexPage = () => {
             <Cover />
             <Verse />
             <Bride />
+            <Countdown />
             <Protocols />
           </>
         ) : <div />}

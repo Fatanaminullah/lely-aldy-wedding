@@ -1,0 +1,91 @@
+.countdown-section {
+    height: 100vh !important;
+    height: calc(var(--vh, 1vh) * 100) !important;  
+    background: #fff url(../images/bg-landscape.jpg) no-repeat center center;  
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+        background: #fff url(../images/bg-countdown.png) no-repeat center center;
+        background-size: cover;
+    }
+    > div {
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title {
+            font-size: 4rem;
+            font-family: $font-chopinscript;
+            color: $default-color;
+            margin-bottom: 3rem;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+        }
+        .row {
+            width: 80%;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+            > div {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin: 1rem 0;
+            }
+            .countdown-box {
+                width: 85%;
+                border-radius: 100%;
+                border: 1px solid $default-color;
+                height: 0;
+                padding-bottom: 85%;
+                position: relative;
+                &:before {
+                    content: "";
+                    display: block;
+                    padding-top: 100%;
+                }
+                .countdown-item {
+                    position: absolute;
+                    top:      0;
+                    left:     0;
+                    bottom:   0;
+                    right:    0;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;     
+                    width: 100%;
+                    height: 100%;      
+                    .label {
+                        font-size: 1.5rem;
+                        font-family: $font-chaparral-regular;
+                        color: $default-color;
+                        position: absolute;
+                        bottom: 10%;
+                        @include media-breakpoint-down(sm) {
+                            font-size: 1rem;
+                        }
+                    }
+                    .value {
+                        font-size: 3rem;
+                        font-family: $font-chaparral-regular;
+                        color: $default-color;
+                        @include media-breakpoint-down(sm) {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

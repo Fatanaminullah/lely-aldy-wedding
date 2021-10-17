@@ -1,13 +1,13 @@
 .protocols-section {
     height: 100vh !important;
     height: calc(var(--vh, 1vh) * 100) !important;  
-    background: #000 url(../images/bg-landscape.jpg) no-repeat center center;  
+    background: #fff url(../images/bg-landscape.jpg) no-repeat center center;  
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     @include media-breakpoint-down(sm) {
-        background: #000 url(../images/bg-protocols.png) no-repeat center center;
+        background: #fff url(../images/bg-protocols.png) no-repeat center center;
         background-size: cover;
     }
     .content {
@@ -33,6 +33,7 @@
             @include media-breakpoint-down(sm) {
                 text-align: justify;
                 width: 80%;
+                font-size: 1rem;
             }
         }
         .flower {
